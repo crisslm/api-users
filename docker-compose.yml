@@ -1,0 +1,10 @@
+services:
+  postgres:
+    container_name: api_login_postgres
+    image: postgres
+    ports:
+      - "5440:5432"
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=api_login
